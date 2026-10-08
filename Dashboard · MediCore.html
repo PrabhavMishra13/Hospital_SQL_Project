@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboard · MediCore</title>
+  <link rel="stylesheet" href="./Dashboard · MediCore_files/style.css">
+  <script defer="" src="./Dashboard · MediCore_files/app.js.download"></script>
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="brand-icon">✚</div><div><strong>MediCore</strong><small>Hospital System</small></div></div>
+    <nav>
+      <a href="http://127.0.0.1:5000/" class="active">⌂ <span>Dashboard</span></a>
+      <a href="http://127.0.0.1:5000/patients" class="">♙ <span>Patients</span></a>
+      <a href="http://127.0.0.1:5000/appointments" class="">▣ <span>Appointments</span></a>
+      <a href="http://127.0.0.1:5000/doctors" class="">⚕ <span>Doctors &amp; Staff</span></a>
+      <a href="http://127.0.0.1:5000/wards" class="">▦ <span>Wards &amp; Rooms</span></a>
+      <a href="http://127.0.0.1:5000/pharmacy" class="">▤ <span>Pharmacy</span></a>
+      <a href="http://127.0.0.1:5000/billing" class="">▤ <span>Billing</span></a>
+    </nav>
+    <div class="sidebar-foot">Hospital DB<br><span>MySQL schema → Python web UI</span></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="menu" onclick="toggleSidebar()">☰</button>
+      <div class="search"><span>⌕</span><input id="globalSearch" placeholder="Search patients, doctors, records..." oninput="filterTables(this.value)"></div>
+      <div class="top-actions"><button class="icon-btn">🔔<i></i></button><div class="profile"><div class="avatar">PS</div><div><b>Prabhav Shankar Mishra</b><small>Administrator</small></div></div></div>
+    </header>
+    
+      
+    
+    <section class="content">
+<div class="page-head"><div><p class="eyebrow">OVERVIEW</p><h1>Hospital Dashboard</h1><p class="muted">Monitor patients, appointments, beds and finances at a glance.</p></div><a class="btn primary" href="http://127.0.0.1:5000/patients">＋ Register Patient</a></div>
+<div class="stats">
+  <div class="stat"><div class="stat-icon blue">♙</div><div><span>Total Patients</span><strong>6</strong><em>Registered records</em></div></div>
+  <div class="stat"><div class="stat-icon purple">⚕</div><div><span>Doctors</span><strong>4</strong><em>Active specialists</em></div></div>
+  <div class="stat"><div class="stat-icon orange">▣</div><div><span>Appointments</span><strong>3</strong><em>Scheduled</em></div></div>
+  <div class="stat"><div class="stat-icon green">₹</div><div><span>Collected</span><strong>₹28000</strong><em>Recorded payments</em></div></div>
+</div>
+<div class="grid-2">
+  <section class="card"><div class="card-head"><div><h2>Upcoming Appointments</h2><p>Latest scheduled consultations</p></div><a href="http://127.0.0.1:5000/appointments">View all →</a></div>
+  <div class="table-wrap"><table class="data-table searchable"><thead><tr><th>Patient</th><th>Doctor</th><th>Date</th><th>Time</th><th>Status</th></tr></thead><tbody>
+  <tr><td><b>Ramesh Kumar</b></td><td>Arun Sharma</td><td>2026-03-15</td><td>10:00</td><td><span class="badge scheduled">Completed</span></td></tr><tr><td><b>Vikas Tiwari</b></td><td>Rakesh Verma</td><td>2026-03-18</td><td>09:30</td><td><span class="badge scheduled">Completed</span></td></tr><tr><td><b>Anita Patel</b></td><td>Arun Sharma</td><td>2026-03-25</td><td>10:00</td><td><span class="badge scheduled">Scheduled</span></td></tr><tr><td><b>Shalini Mishra</b></td><td>Priya Mehta</td><td>2026-03-25</td><td>11:30</td><td><span class="badge scheduled">Scheduled</span></td></tr><tr><td><b>Anita Patel</b></td><td>Rakesh Verma</td><td>2026-03-26</td><td>09:00</td><td><span class="badge scheduled">Scheduled</span></td></tr>
+  </tbody></table></div></section>
+  <section class="card"><div class="card-head"><div><h2>Bed Occupancy</h2><p>Current ward availability</p></div><a href="http://127.0.0.1:5000/wards">Manage →</a></div>
+  <div class="occupancy"><div class="donut" style="--value: 45.0%"><span>45.0%</span></div><div><strong>45</strong><small>Occupied beds</small><strong>56</strong><small>Available beds</small></div></div>
+  <div class="mini-alert"><span>⚠</span><div><b>2 medicines</b><small>need stock attention</small></div></div></section>
+</div>
+<section class="card"><div class="card-head"><div><h2>Low Stock Medicines</h2><p>Items at or below their reorder level</p></div><a href="http://127.0.0.1:5000/pharmacy">Open pharmacy →</a></div>
+<div class="medicine-grid"><div class="medicine"><div class="pill">▤</div><div><b>Ceftriaxone 1g</b><small>Antibiotic</small></div><strong>8</strong><small>units</small></div><div class="medicine"><div class="pill">▤</div><div><b>Amoxicillin 500mg</b><small>Antibiotic</small></div><strong>15</strong><small>units</small></div></div></section>
+</section>
+  </main>
+</div>
+
+</body></html>
